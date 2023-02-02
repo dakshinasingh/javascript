@@ -9,8 +9,8 @@ const foo = function(...numbers){
 
     numbers.forEach(e => console.log(e));
 
-   console.log(numbers.pop())
-    numbers.find(e => e==1);
+    console.log(numbers.pop())
+    numbers.find(e => e==19);
 }
 
 foo(1)

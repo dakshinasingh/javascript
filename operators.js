@@ -2,7 +2,7 @@
 
 const user={
     id:2,
-    email:'email address'
+    email:"user"
 }
 
 console.log(user.id ?? '3');
@@ -15,18 +15,19 @@ const user2={
     info:{
         name:'zack',
         address:{
-            state:'UP'
+            state:'UP',
+            city:'ggg'
         }
     }
 }
 if(user2!=null && user2.info!=null && user2.info.address!=null)
 console.log(user2.info.address.state);
 //this is equivalent to
-console.log(user2 ?.info?.address?.state)
+console.log(user2 ?.info?.address?.state?.city)
 
-//optional chaining operator
+//logical operators
 a=10;
-a==10;
+a+=10;
 console.log(a);
 a=0;
 a||=30;
@@ -37,6 +38,12 @@ a=0;
 a??=40;
 console.log(a);
 
+
 //numeric seperator
 amt=10_00_000;
 console.log(amt);
+
+//e.g.
+a=null;
+console.log(a);
+document.write(a??"user@")
