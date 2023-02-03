@@ -23,3 +23,8 @@ console.log(listOfEmps.__proto__ === Object.prototype)
 console.log(listOfEmps.__proto__ === Array.prototype)
 console.log(Array.prototype.__proto__ === Object.prototype)
 console.log(listOfEmps.__proto__.__proto__ === Object.prototype)
+
+//listOfEmps ->Array.prototype-> Object.prototype -> null
+
+//Prototypal Chain, Prototypal Inheritance
+//Object based Inheritance

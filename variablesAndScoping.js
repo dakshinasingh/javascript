@@ -20,6 +20,7 @@ for(let j=0;j<5;j++){
 
 //const--cannot be changed
 {
+    
     const n="jack";
     console.log(n);
 }

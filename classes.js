@@ -12,7 +12,7 @@ zack.age=30;
 console.log(zack.age);
 
 
-//constructor
+
 const Person = function(name){
     if(!new.target){
         throw new Error('Not a Function')
@@ -21,23 +21,19 @@ const Person = function(name){
 }
 
 const jazz = new Person('Jazz');
-// Person('Elina');
 
 
-//ES6
+//constructor
 class Home{
     constructor(rooms, kitchens, flooring){
         this.kitchens = kitchens,
         this.rooms = rooms,
-        this.implemnentedFlooring = flooring
+        this.implemnentedFlooring = flooring,
         this.bathrooms = 1
         this.floors = 1
     }
 
-    //ES2022
-    #stores = 2;
-
-    //getter
+  #stores=3; //making the variable private
     get floor(){
         return this.implemnentedFlooring;
     }
@@ -56,22 +52,25 @@ class Home{
         this.#createBathroom();
     }
 
+
+    //private methods
+
     #createBathroom(){
         this.bathrooms = this.bathrooms + 1;
     }
 
 }
-//console.log(typeof(Home))
+
 
 const myHome = new Home(5, 2, 'Marble');
 myHome.createRoom();
 myHome.floor = 'Concrete'
 console.log(myHome.rooms)
-console.log(myHome.kitchens)
+console.log(myHome.kitchens);
+console.log("hhhhhhhhhhhhhhhhhhhh");
 console.log(myHome.floor)
 console.log(myHome.bathrooms)
 myHome.createFloor();
 console.log(myHome.bathrooms)
-
-Home(5, 2, 'Marble');
+// console.log(createBathroom()); //it cannot be called because its private
 

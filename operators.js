@@ -5,7 +5,7 @@ const user={
     email:"user"
 }
 
-console.log(user.id ?? '3');
+console.log(user.id ?? 3);
 console.log(user.email ?? "user@gmail.com");
 
 //optional chaining operator

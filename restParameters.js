@@ -1,16 +1,16 @@
-const foo = function(...numbers){
-    console.log(numbers);
-    console.log(numbers[1])
-    console.log(numbers instanceof Array);
+const foo = function(a,b,...numbers){
+    console.log(a);
+    console.log(numbers[2]);
+    // console.log(numbers instanceof Array);
 
-   //  for(let i = 0; i < numbers.length; i++){
-   //      console.log(numbers[i]);
-   //  }
+    // for(let i = 0; i < numbers.length; i++){
+    //     console.log(numbers[i]);
+    // }
 
-    numbers.forEach(e => console.log(e));
+    // numbers.forEach(e => console.log(e));
 
-    console.log(numbers.pop())
-    numbers.find(e => e==19);
+    // console.log(numbers.pop())
+    // numbers.find(e => e==19);
 }
 
-foo(1)
+foo(1,34,5,6,7);
