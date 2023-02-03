@@ -5,8 +5,8 @@ let loop = function(...numbers){
 let numbers = [1, 2, 6];
 loop(...numbers);
 
-let threeParams = function(number1, number2, number3){
-  console.log(number1 + ", "+ number2 + ", " + number3 );
+let threeParams = function(n1, n2, n3){
+  console.log(n1 + ", "+ n2 + ", " + n3 );
 }
 
 threeParams(...numbers);
@@ -19,3 +19,6 @@ console.log(...'there');
 const basic = {firstName: 'James', lastName:'Bond', age: 30}
 const personalDetails = {...basic, mobile:777777, email: 'james@something.com'}
 console.log(personalDetails)
+
+
+console.log("iiiiiiiiiiiii")
